@@ -1,0 +1,47 @@
+.header-container {
+	position: relative;
+
+	.header-menu {
+		position: absolute;
+		display: none;
+		left: 0;
+		// top: clamp(50px, 5vw, 100px);
+		top: 0;
+
+		letter-spacing: 1px;
+		font-family: 'Syncopate', sans-serif;
+		color: #626262;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		li {
+			margin: 10px 0;
+		}
+	}
+
+	h1 {
+		margin-top: 20px;
+		.line {
+			font-size: 15vw;
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 1;
+			font-family: 'Bai Jamjuree', sans-serif;
+			font-weight: 600;
+			overflow: hidden;
+			span {
+				display: block;
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+			margin-top: 50px;
+		}
+	}
+}
+.lineParent {
+	overflow: hidden;
+	.lineChildren {
+		transform: translate(0, 500px);
+	}
+}

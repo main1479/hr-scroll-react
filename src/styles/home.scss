@@ -1,0 +1,45 @@
+// @import url("https://fonts.googleapis.com/css?family=Oswald:300;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@100;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap');
+
+$bg-color: #f5f0ec;
+
+html {
+	div {
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	// overflow-x: hidden;
+	cursor: none;
+	background-color: $bg-color;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.main-container {
+	padding: 0 5vw;
+	// clip-path: inset(100% 0% 0% 0%);
+	// backface-visibility: hidden;
+}
+
+section {
+	padding: 100px 0;
+	.section-header {
+		margin-bottom: 50px;
+	}
+}
