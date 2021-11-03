@@ -3,6 +3,10 @@
 	margin-left: -5vw;
 	margin-right: -5vw;
 	position: relative;
+
+	@media only screen and (max-width: 576) {
+		padding: 0;
+	}
 }
 
 .gallery-counter {
@@ -52,6 +56,9 @@
 		padding-bottom: 15vh;
 		gap: 300px;
 	}
+	@media only screen and (max-width: 576px) {
+		gap: 150px;
+	}
 
 	.gallery-item {
 		width: 100%;
@@ -60,10 +67,6 @@
 		will-change: transform;
 		@media only screen and (max-width: 1024px) {
 			height: 90vh;
-
-			// &:not(:last-child) {
-			// 	margin-bottom: 200px;
-			// }
 		}
 	}
 
@@ -121,7 +124,7 @@
 			grid-template-columns: 1fr;
 			padding: 0 5vw;
 			padding-left: 10vw;
-			margin-bottom: 200px;
+			// margin-bottom: 200px;
 			.gallery-item-info {
 				transform: translateX(-5vw);
 				mix-blend-mode: difference;

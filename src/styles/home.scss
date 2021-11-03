@@ -22,13 +22,17 @@ html {
 body {
 	font-family: 'Poppins', sans-serif;
 	// overflow-x: hidden;
-	cursor: none;
+	// cursor: none;
 	background-color: $bg-color;
 	&::-webkit-scrollbar {
 		display: none;
 	}
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+
+	@media only screen and (max-width: 1200px) {
+		cursor: auto;
+	}
 }
 
 .main-container {
